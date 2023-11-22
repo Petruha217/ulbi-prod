@@ -5,7 +5,8 @@ module.exports = {
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime"
     ],
     "overrides": [
         {
@@ -33,7 +34,9 @@ module.exports = {
         "@typescript-eslint/space-infix-ops": "off",
         "@typescript-eslint/prefer-nullish-coalescing": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
-        "@typescript-eslint/naming-convention": "off"
+        "@typescript-eslint/naming-convention": "off",
+        "quotes": "off",
+        "@typescript-eslint/quotes": "off"
     },
     globals: {
         "__IS_DEV__": true
