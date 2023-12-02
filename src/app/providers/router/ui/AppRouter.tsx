@@ -1,11 +1,11 @@
-import { Route, Routes } from "react-router-dom";
-import React, { Suspense } from 'react';
-import { RouteConfig } from "shared/config/routeConfig/config";
-
+import { Route, Routes } from "react-router-dom"
+import { Suspense } from 'react'
+import { RouteConfig } from "shared/config/routeConfig/config"
+import { LoaderPage } from "widgets/LoaderPage"
 
 const AppRouter = () => {
   return (
-    <Suspense fallback={<h3>Loding...</h3>}>
+    <Suspense fallback={<LoaderPage/>}>
         <Routes>
         {Object.values(RouteConfig).map(({ path, element }) => {
           return <Route
@@ -20,7 +20,7 @@ const AppRouter = () => {
         })}
       </Routes>
     </Suspense>
-  );
+  )
 }
 
-export default AppRouter;
+export default AppRouter

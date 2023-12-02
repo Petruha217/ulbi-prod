@@ -8,7 +8,7 @@
     "stylelint-config-rational-order/plugin"
   ],
   "rules": {
-    "indentation": [4],
+    "indentation": [2],
     "selector-class-pattern": null,
     "unit-no-unknown": [
       true,
@@ -21,7 +21,7 @@
       true,
       {
         "border-in-box-model": true,
-        "empty-line-between-groups": true
+        "empty-line-between-groups": false
       }
     ],
     "string-quotes": "single",

@@ -36,7 +36,8 @@ module.exports = {
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/naming-convention": "off",
         "quotes": "off",
-        "@typescript-eslint/quotes": "off"
+        "@typescript-eslint/quotes": "off",
+        "@typescript-eslint/explicit-function-return-type": "off"
     },
     globals: {
         "__IS_DEV__": true

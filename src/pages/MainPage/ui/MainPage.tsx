@@ -1,10 +1,14 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
+import { BugButton } from 'widgets/ErrorPage/ui/BugButton'
 
 const MainPage = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation()
   return (
-    <div>{t('Главная')}</div>
+    <>
+      <div>{t('Главная')}</div>
+      <BugButton/>
+    </>
   )
 }
 
-export default MainPage;
+export default MainPage

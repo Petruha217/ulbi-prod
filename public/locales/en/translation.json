@@ -1,7 +1,8 @@
 {
   "Язык": "English",
   "Главная": "Main page",
-  "about": {
-    "fg": "frog"
-  }
+  "Страница не найдена": "Not found page",
+  "Возникла непредвиденная ошибка": "An unexpected error occurred",
+  "Обновить страницу": "Refresh the page",
+  "Тестировать ошибку": "Testing Bug"
 }
