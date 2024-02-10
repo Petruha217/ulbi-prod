@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-floating-promises */
 import { classNames } from "shared/lib/classNames/classNames"
-import cls from './LangSwitcher.module.scss'
 import { useTranslation } from "react-i18next"
 import { Button, ButtonTheme } from "shared/ui/Button"
 
 interface LangSwitcherProps {
   className?: string
+  short?: boolean
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation()
   function changeLanguage () {
     i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
@@ -16,9 +16,9 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
 
   return (
     <Button onClick={changeLanguage}
-      className={classNames(cls.langSwitcher, {}, [])}
+      className={classNames('', {}, [className])}
       theme = {ButtonTheme.CLEAR}
-    >{t('Язык')}
+    >{t(short? 'Короткий язык' : 'Язык')}
     </Button>
   )
 }
