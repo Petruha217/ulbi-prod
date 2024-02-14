@@ -27,7 +27,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "react-hooks"
     ],
     "rules": {
         "@typescript-eslint/consistent-type-imports": "off",
@@ -38,7 +39,9 @@ module.exports = {
         "@typescript-eslint/naming-convention": "off",
         "quotes": "off",
         "@typescript-eslint/quotes": "off",
-        "@typescript-eslint/explicit-function-return-type": "off"
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error"
     },
     globals: {
         "__IS_DEV__": true
