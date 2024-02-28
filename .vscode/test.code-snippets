@@ -1,0 +1,14 @@
+{
+  "Test": {
+    "scope": "typescriptreact,typescript",
+    "prefix": "ts",
+    "body": [
+      "describe('${TM_FILENAME_BASE/\\..*//}', () => {",
+      "\ttest('', () => {",
+      "\t\texpect().toEqual()",
+      "\t})",
+      "})"
+    ],
+    "description": "Вставка теста"
+  }
+}
