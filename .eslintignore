@@ -2,3 +2,4 @@
 /config/jest/jest.config.ts
 /webpack.config.ts
 /generate-visual-json-report.js
+/json-server/*
