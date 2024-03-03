@@ -1,5 +1,4 @@
 import { classNames } from "shared/lib/classNames/classNames"
-import cls from './Input.module.scss'
 import React, { InputHTMLAttributes } from "react"
 
 type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>
@@ -16,7 +15,7 @@ export const Input = (props: InputProps) => {
     onChange(e.target.value)
   }
   return (
-    <div className={classNames(cls.input, {}, [])}>
+    <div className={classNames('', {}, [])}>
       <input
         className={className}
         type={type}
